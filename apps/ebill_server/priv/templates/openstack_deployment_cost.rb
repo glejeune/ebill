@@ -200,3 +200,9 @@ def cost(data)
 
   EBill.ok(rc)
 end
+
+def rate(data)
+  # TODO
+  json = EBill.to_json(data)
+  EBill.ok(json[:ok])
+end
